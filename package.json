@@ -5,14 +5,18 @@
   "main": "index.js",
   "private": true,
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": [
+      "eslint --config .eslintrc . --fix",
+      "prettier --write --ignore-unknown"
+    ]
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --mode development",
     "build": "webpack --mode development",
     "build-prod": "webpack --mode production",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint --config .eslintrc . --format stylish"
   },
   "keywords": [],
   "author": "Scherba Sergey aka krontill",
@@ -21,12 +25,19 @@
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@types/styled-components": "^5.1.20",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.7",
     "prettier": "2.5.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",
+    "typescript-eslint": "^0.0.1-alpha.0",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
