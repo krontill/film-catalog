@@ -3,6 +3,7 @@ import { Header } from './components/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import { routes } from './routes';
 import { NotFound } from './pages/404/NotFound';
+import 'normalize.css';
 
 export const App = () => (
   <>
