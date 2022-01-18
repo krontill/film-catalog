@@ -1,4 +1,15 @@
 import * as React from 'react';
-import { StyledHeader } from './styled';
+import { StyledHeader, StyledLink } from './styled';
+import { routes } from '../../routes';
 
-export const Header = () => <StyledHeader>header</StyledHeader>;
+export const Header = () => (
+  <StyledHeader>
+    <nav>
+      {routes.map((route) => (
+        <StyledLink key={route.path} to={route.path}>
+          {route.title}
+        </StyledLink>
+      ))}
+    </nav>
+  </StyledHeader>
+);
