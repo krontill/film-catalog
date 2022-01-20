@@ -1,0 +1,24 @@
+{
+  "locales": [
+    "en",
+    "ru"
+  ],
+  "catalogs": [
+    {
+      "path": "locales/{locale}/messages",
+      "include": [
+        "src"
+      ]
+    }
+  ],
+  "format": "po",
+  "extractors": [
+    "@lingui/cli/api/extractors/typescript"
+  ],
+  "extractBabelOptions": {
+    "plugins": [
+      "@babel/plugin-syntax-dynamic-import"
+    ]
+  },
+  "compileNamespace": "ts"
+}

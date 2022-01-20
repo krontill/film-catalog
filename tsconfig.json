@@ -4,11 +4,12 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "es6",
-    "target": "es5",
-    "jsx": "react",
+    "target": "es2016",
+    "jsx": "preserve",
     "allowJs": true,
     "moduleResolution": "node",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": ["./node_modules/@lingui/macro/global"]
   },
   "exclude": ["node_modules"]
 }
