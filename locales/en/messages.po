@@ -17,7 +17,7 @@ msgstr ""
 msgid "Active language"
 msgstr ""
 
-#: src/pages/dashboard/Dashboard.tsx:4
+#: src/pages/dashboard/Dashboard.tsx:7
 #: src/routes.tsx:13
 msgid "Dashboard"
 msgstr ""
@@ -28,6 +28,10 @@ msgstr ""
 
 #: src/pages/lists/Lists.tsx:4
 msgid "Lists"
+msgstr ""
+
+#: src/components/Image/Image.tsx:7
+msgid "Loading image"
 msgstr ""
 
 #: src/routes.tsx:16
@@ -43,8 +47,20 @@ msgstr ""
 msgid "Movies"
 msgstr ""
 
+#: src/pages/dashboard/Dashboard.tsx:12
+msgid "Now playing"
+msgstr ""
+
+#: src/components/List/List.tsx:13
+msgid "Overview"
+msgstr ""
+
 #: src/pages/404/NotFound.tsx:4
 msgid "Page not found"
+msgstr ""
+
+#: src/pages/dashboard/Dashboard.tsx:24
+msgid "Popular"
 msgstr ""
 
 #: src/pages/random/Random.tsx:4
@@ -53,4 +69,20 @@ msgstr ""
 
 #: src/routes.tsx:15
 msgid "Random movie"
+msgstr ""
+
+#: src/components/List/List.tsx:9
+msgid "Title"
+msgstr ""
+
+#: src/pages/dashboard/Dashboard.tsx:18
+msgid "Upcoming"
+msgstr ""
+
+#: src/pages/dashboard/MovieList.tsx:8
+msgid "loading error"
+msgstr ""
+
+#: src/pages/dashboard/MovieList.tsx:11
+msgid "loading..."
 msgstr ""

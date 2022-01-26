@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = (env, argv) => {
   const devMode = argv.mode === 'development';
@@ -35,6 +36,10 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      new Dotenv({
+        path: `./.env.${argv.mode}`,
+        safe: true,
+      }),
       new HtmlWebpackPlugin({
         template: 'assets/index.html',
       }),

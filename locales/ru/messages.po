@@ -17,7 +17,7 @@ msgstr ""
 msgid "Active language"
 msgstr "Активный язык"
 
-#: src/pages/dashboard/Dashboard.tsx:4
+#: src/pages/dashboard/Dashboard.tsx:7
 #: src/routes.tsx:13
 msgid "Dashboard"
 msgstr "Обзор"
@@ -29,6 +29,10 @@ msgstr "Детали"
 #: src/pages/lists/Lists.tsx:4
 msgid "Lists"
 msgstr "Списки"
+
+#: src/components/Image/Image.tsx:7
+msgid "Loading image"
+msgstr "Загрузка изображения"
 
 #: src/routes.tsx:16
 msgid "Movie details"
@@ -43,9 +47,21 @@ msgstr "Список фильмов"
 msgid "Movies"
 msgstr "Фильмы"
 
+#: src/pages/dashboard/Dashboard.tsx:12
+msgid "Now playing"
+msgstr "Сейчас в прокате"
+
+#: src/components/List/List.tsx:13
+msgid "Overview"
+msgstr "Описание"
+
 #: src/pages/404/NotFound.tsx:4
 msgid "Page not found"
 msgstr "Страница не найдена"
+
+#: src/pages/dashboard/Dashboard.tsx:24
+msgid "Popular"
+msgstr "Популярные"
 
 #: src/pages/random/Random.tsx:4
 msgid "Random"
@@ -54,3 +70,19 @@ msgstr "Случайный"
 #: src/routes.tsx:15
 msgid "Random movie"
 msgstr "Случайный фильм"
+
+#: src/components/List/List.tsx:9
+msgid "Title"
+msgstr "Заголовок"
+
+#: src/pages/dashboard/Dashboard.tsx:18
+msgid "Upcoming"
+msgstr "Предстоящие"
+
+#: src/pages/dashboard/MovieList.tsx:8
+msgid "loading error"
+msgstr "ошибка загрузки"
+
+#: src/pages/dashboard/MovieList.tsx:11
+msgid "loading..."
+msgstr "загрузка..."
