@@ -4,21 +4,18 @@ import config from '../config';
 import { fetcher } from '../helpers/fetcher';
 
 const { API_URL, API_KEY } = config;
-const listLength = 5;
 
-const getApiUrl = (movieList: string, activeLang: string) =>
-  `${API_URL}movie/${movieList}?api_key=${API_KEY}&language=${activeLang}`;
+const getApiUrl = (movieItem: string | number, activeLang: string) =>
+  `${API_URL}movie/${movieItem}?api_key=${API_KEY}&language=${activeLang}`;
 
-export const useMovie = (movieList: string) => {
+export const useMovie = (movieItem: string | number) => {
   const { i18n } = useLingui();
   const activeLang = i18n.locale;
-  const url = getApiUrl(movieList, activeLang);
+  const url = getApiUrl(movieItem, activeLang);
   const { data, error } = useSWR(url, fetcher);
 
-  const list = data?.results.slice(0, listLength);
-
   return {
-    list,
+    data,
     isLoading: error === undefined && data === undefined,
     error,
   };

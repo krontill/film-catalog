@@ -17,14 +17,38 @@ msgstr ""
 msgid "Active language"
 msgstr "Активный язык"
 
+#: src/pages/details/MovieInfo.tsx:15
+msgid "Budget"
+msgstr "Бюджет"
+
+#: src/pages/details/CastAndCrew.tsx:14
+msgid "Cast"
+msgstr "Актеры"
+
+#: src/pages/details/DetailsPage.tsx:18
+msgid "Cast and crew for a movie."
+msgstr "Актеры и съемочная группа фильма."
+
+#: src/pages/details/CastAndCrew.tsx:17
+msgid "Character"
+msgstr "Роль"
+
+#: src/pages/details/CastAndCrew.tsx:22
+msgid "Crew"
+msgstr "Команда"
+
 #: src/pages/dashboard/Dashboard.tsx:7
 #: src/routes.tsx:13
 msgid "Dashboard"
 msgstr "Обзор"
 
-#: src/pages/details/Details.tsx:4
-msgid "Details"
-msgstr "Детали"
+#: src/pages/details/MovieInfo.tsx:18
+msgid "Genres"
+msgstr "Жанры"
+
+#: src/pages/details/CastAndCrew.tsx:25
+msgid "Job"
+msgstr "Должность"
 
 #: src/pages/lists/Lists.tsx:4
 msgid "Lists"
@@ -34,6 +58,7 @@ msgstr "Списки"
 msgid "Loading image"
 msgstr "Загрузка изображения"
 
+#: src/pages/details/DetailsPage.tsx:14
 #: src/routes.tsx:16
 msgid "Movie details"
 msgstr "Детали фильма"
@@ -47,11 +72,16 @@ msgstr "Список фильмов"
 msgid "Movies"
 msgstr "Фильмы"
 
+#: src/pages/details/CastAndCrew.tsx:17
+#: src/pages/details/CastAndCrew.tsx:25
+msgid "Name"
+msgstr "Имя"
+
 #: src/pages/dashboard/Dashboard.tsx:12
 msgid "Now playing"
 msgstr "Сейчас в прокате"
 
-#: src/components/List/List.tsx:13
+#: src/components/Preview/Preview.tsx:15
 msgid "Overview"
 msgstr "Описание"
 
@@ -63,6 +93,10 @@ msgstr "Страница не найдена"
 msgid "Popular"
 msgstr "Популярные"
 
+#: src/pages/details/MovieInfo.tsx:30
+msgid "Production companies"
+msgstr "Производство компаний"
+
 #: src/pages/random/Random.tsx:4
 msgid "Random"
 msgstr "Случайный"
@@ -71,7 +105,15 @@ msgstr "Случайный"
 msgid "Random movie"
 msgstr "Случайный фильм"
 
-#: src/components/List/List.tsx:9
+#: src/pages/details/DetailsPage.tsx:22
+msgid "Recommendation"
+msgstr "Рекомендация"
+
+#: src/pages/details/MovieInfo.tsx:24
+msgid "Site"
+msgstr "Сайт"
+
+#: src/components/Preview/Preview.tsx:10
 msgid "Title"
 msgstr "Заголовок"
 
@@ -79,10 +121,16 @@ msgstr "Заголовок"
 msgid "Upcoming"
 msgstr "Предстоящие"
 
-#: src/pages/dashboard/MovieList.tsx:8
+#: src/pages/dashboard/MovieList.tsx:10
+#: src/pages/details/CastAndCrew.tsx:8
+#: src/pages/details/MovieInfo.tsx:8
+#: src/pages/details/Recommendation.tsx:9
 msgid "loading error"
 msgstr "ошибка загрузки"
 
-#: src/pages/dashboard/MovieList.tsx:11
+#: src/pages/dashboard/MovieList.tsx:12
+#: src/pages/details/CastAndCrew.tsx:10
+#: src/pages/details/MovieInfo.tsx:10
+#: src/pages/details/Recommendation.tsx:11
 msgid "loading..."
 msgstr "загрузка..."

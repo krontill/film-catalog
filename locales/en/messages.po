@@ -17,13 +17,37 @@ msgstr ""
 msgid "Active language"
 msgstr ""
 
+#: src/pages/details/MovieInfo.tsx:15
+msgid "Budget"
+msgstr ""
+
+#: src/pages/details/CastAndCrew.tsx:14
+msgid "Cast"
+msgstr ""
+
+#: src/pages/details/DetailsPage.tsx:18
+msgid "Cast and crew for a movie."
+msgstr ""
+
+#: src/pages/details/CastAndCrew.tsx:17
+msgid "Character"
+msgstr ""
+
+#: src/pages/details/CastAndCrew.tsx:22
+msgid "Crew"
+msgstr ""
+
 #: src/pages/dashboard/Dashboard.tsx:7
 #: src/routes.tsx:13
 msgid "Dashboard"
 msgstr ""
 
-#: src/pages/details/Details.tsx:4
-msgid "Details"
+#: src/pages/details/MovieInfo.tsx:18
+msgid "Genres"
+msgstr ""
+
+#: src/pages/details/CastAndCrew.tsx:25
+msgid "Job"
 msgstr ""
 
 #: src/pages/lists/Lists.tsx:4
@@ -34,6 +58,7 @@ msgstr ""
 msgid "Loading image"
 msgstr ""
 
+#: src/pages/details/DetailsPage.tsx:14
 #: src/routes.tsx:16
 msgid "Movie details"
 msgstr ""
@@ -47,11 +72,16 @@ msgstr ""
 msgid "Movies"
 msgstr ""
 
+#: src/pages/details/CastAndCrew.tsx:17
+#: src/pages/details/CastAndCrew.tsx:25
+msgid "Name"
+msgstr ""
+
 #: src/pages/dashboard/Dashboard.tsx:12
 msgid "Now playing"
 msgstr ""
 
-#: src/components/List/List.tsx:13
+#: src/components/Preview/Preview.tsx:15
 msgid "Overview"
 msgstr ""
 
@@ -63,6 +93,10 @@ msgstr ""
 msgid "Popular"
 msgstr ""
 
+#: src/pages/details/MovieInfo.tsx:30
+msgid "Production companies"
+msgstr ""
+
 #: src/pages/random/Random.tsx:4
 msgid "Random"
 msgstr ""
@@ -71,7 +105,15 @@ msgstr ""
 msgid "Random movie"
 msgstr ""
 
-#: src/components/List/List.tsx:9
+#: src/pages/details/DetailsPage.tsx:22
+msgid "Recommendation"
+msgstr ""
+
+#: src/pages/details/MovieInfo.tsx:24
+msgid "Site"
+msgstr ""
+
+#: src/components/Preview/Preview.tsx:10
 msgid "Title"
 msgstr ""
 
@@ -79,10 +121,16 @@ msgstr ""
 msgid "Upcoming"
 msgstr ""
 
-#: src/pages/dashboard/MovieList.tsx:8
+#: src/pages/dashboard/MovieList.tsx:10
+#: src/pages/details/CastAndCrew.tsx:8
+#: src/pages/details/MovieInfo.tsx:8
+#: src/pages/details/Recommendation.tsx:9
 msgid "loading error"
 msgstr ""
 
-#: src/pages/dashboard/MovieList.tsx:11
+#: src/pages/dashboard/MovieList.tsx:12
+#: src/pages/details/CastAndCrew.tsx:10
+#: src/pages/details/MovieInfo.tsx:10
+#: src/pages/details/Recommendation.tsx:11
 msgid "loading..."
 msgstr ""

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyledHeader, StyledLink } from './styled';
-import { routes } from '../../routes';
+import { nav } from '../../routes';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/macro';
 
@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <StyledHeader>
       <nav>
-        {routes.map((route) => (
+        {nav.map((route) => (
           <StyledLink key={route.path} to={route.path}>
             {route.title}
           </StyledLink>
