@@ -6,7 +6,7 @@ interface Image {
   imagePath: string;
 }
 
-export const Image: React.FunctionComponent<Image> = ({ imagePath }) => {
+export const Image: React.FC<Image> = ({ imagePath }) => {
   const { baseUrl, isLoadingImage, posterSizes } = useImage();
 
   if (isLoadingImage) return <Trans>Loading image</Trans>;

@@ -1,6 +1,7 @@
 /*eslint-disable*/
 export const messages = {
   'Active language': 'Активный язык',
+  Apply: 'Применить',
   Budget: 'Бюджет',
   Cast: 'Актеры',
   'Cast and crew for a movie.': 'Актеры и съемочная группа фильма.',

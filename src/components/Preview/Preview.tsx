@@ -4,7 +4,7 @@ import { Trans } from '@lingui/macro';
 import { Link } from 'react-router-dom';
 import { PreviewItem } from '../../types/PreviewItem';
 
-export const Preview: React.FunctionComponent<PreviewItem> = ({ id, poster_path: posterPath, title, overview }) => (
+export const Preview: React.FC<PreviewItem> = ({ id, poster_path: posterPath, title, overview }) => (
   <>
     <Link to={`/details-movie-${id}`}>
       <Image imagePath={posterPath} />

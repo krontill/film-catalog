@@ -3,7 +3,7 @@ import { useMovie } from '../../hooks/useMovie';
 import { Trans } from '@lingui/macro';
 import { Preview } from '../../components/Preview/Preview';
 
-export const MovieInfo: React.FunctionComponent<{ id: string }> = ({ id }) => {
+export const MovieInfo: React.FC<{ id: string }> = ({ id }) => {
   const { data, isLoading, error } = useMovie(id);
 
   if (error !== undefined) return <Trans>loading error</Trans>;

@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { useMovie } from '../../hooks/useMovie';
 import { Trans } from '@lingui/macro';
+import { useDiscoverMovie } from '../../hooks/useDiscoverMovie';
 import { PreviewList } from '../../components/PreviewList/PreviewList';
-import { ListWrapper } from './styled';
+import { ListWrapper } from '../details/styled';
 
-export const Recommendation: React.FC<{ id: string }> = ({ id }) => {
-  const { data, isLoading, error } = useMovie(`/${id}/recommendations`);
+export const DiscoverMovie: React.FC<{ with_genres: string | undefined }> = ({ with_genres }) => {
+  if (with_genres === undefined || with_genres.length === 0) return null;
+
+  const { data, isLoading, error } = useDiscoverMovie(with_genres);
 
   if (error !== undefined) return <Trans>loading error</Trans>;
 

@@ -6,7 +6,7 @@ interface PreviewList {
   list: Array<PreviewItem>;
 }
 
-export const PreviewList: React.FunctionComponent<PreviewList> = ({ list }) => (
+export const PreviewList: React.FC<PreviewList> = ({ list }) => (
   <ul>
     {list?.map((item: PreviewItem) => (
       <li key={item.id}>

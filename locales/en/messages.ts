@@ -1,6 +1,7 @@
 /*eslint-disable*/
 export const messages = {
   'Active language': 'Active language',
+  Apply: 'Apply',
   Budget: 'Budget',
   Cast: 'Cast',
   'Cast and crew for a movie.': 'Cast and crew for a movie.',
@@ -14,6 +15,7 @@ export const messages = {
   'Movie details': 'Movie details',
   'Movie lists': 'Movie lists',
   Movies: 'Movies',
+  MoviesPage: 'MoviesPage',
   Name: 'Name',
   'Now playing': 'Now playing',
   Overview: 'Overview',

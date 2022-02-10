@@ -9,7 +9,7 @@ interface MovieList {
 
 const listLength = 5;
 
-export const MovieList: React.FunctionComponent<MovieList> = ({ movieList }) => {
+export const MovieList: React.FC<MovieList> = ({ movieList }) => {
   const { data, isLoading, error } = useMovie(movieList);
 
   const list = data?.results.slice(0, listLength);

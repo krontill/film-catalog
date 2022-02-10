@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Dashboard } from './pages/dashboard/Dashboard';
-import { Movies } from './pages/movies/Movies';
+import { MoviesPage } from './pages/movies/MoviesPage';
 import { Random } from './pages/random/Random';
 import { DetailsPage } from './pages/details/DetailsPage';
 import { Lists } from './pages/lists/Lists';
@@ -46,7 +46,7 @@ export const routes = [
   {
     path: MOVIES_PATH,
     title: MOVIES_TITLE,
-    component: <Movies />,
+    component: <MoviesPage />,
   },
   {
     path: RANDOM_PATH,

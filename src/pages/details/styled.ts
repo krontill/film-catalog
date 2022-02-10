@@ -5,11 +5,11 @@ export const CastAndCrewWrapper = styled.div`
   justify-content: space-around;
 `;
 
-export const RecommendationWrapper = styled.div`
+export const ListWrapper = styled.div`
   & > ul {
     display: grid;
     grid-gap: 10px;
     padding: 0 10px;
-    grid-template-columns: repeat(3, calc((100% / 3) - 40px));
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
   }
 `;

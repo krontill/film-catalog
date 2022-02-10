@@ -3,7 +3,7 @@ import { useMovie } from '../../hooks/useMovie';
 import { Trans } from '@lingui/macro';
 import { CastAndCrewWrapper } from './styled';
 
-export const CastAndCrew: React.FunctionComponent<{ id: string }> = ({ id }) => {
+export const CastAndCrew: React.FC<{ id: string }> = ({ id }) => {
   const { data, isLoading, error } = useMovie(`/${id}/credits`);
 
   if (error !== undefined) return <Trans>loading error</Trans>;

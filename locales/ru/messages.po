@@ -17,6 +17,10 @@ msgstr ""
 msgid "Active language"
 msgstr "Активный язык"
 
+#: src/pages/movies/MoviesPage.tsx:19
+msgid "Apply"
+msgstr "Применить"
+
 #: src/pages/details/MovieInfo.tsx:15
 msgid "Budget"
 msgstr "Бюджет"
@@ -67,7 +71,7 @@ msgstr "Детали фильма"
 msgid "Movie lists"
 msgstr "Список фильмов"
 
-#: src/pages/movies/Movies.tsx:4
+#: src/pages/movies/MoviesPage.tsx:14
 #: src/routes.tsx:14
 msgid "Movies"
 msgstr "Фильмы"
@@ -125,6 +129,8 @@ msgstr "Предстоящие"
 #: src/pages/details/CastAndCrew.tsx:8
 #: src/pages/details/MovieInfo.tsx:8
 #: src/pages/details/Recommendation.tsx:9
+#: src/pages/movies/DiscoverMovie.tsx:11
+#: src/pages/movies/GenreFilter.tsx:8
 msgid "loading error"
 msgstr "ошибка загрузки"
 
@@ -132,5 +138,7 @@ msgstr "ошибка загрузки"
 #: src/pages/details/CastAndCrew.tsx:10
 #: src/pages/details/MovieInfo.tsx:10
 #: src/pages/details/Recommendation.tsx:11
+#: src/pages/movies/DiscoverMovie.tsx:13
+#: src/pages/movies/GenreFilter.tsx:10
 msgid "loading..."
 msgstr "загрузка..."
