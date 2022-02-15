@@ -48,7 +48,7 @@ msgstr "Обзор"
 
 #: src/pages/movies/MoviesPage.tsx:19
 msgid "Filter"
-msgstr "Фильтер"
+msgstr "Фильтр"
 
 #: src/pages/movies/MoviesPage.tsx:22
 msgid "Genre"

@@ -8,7 +8,7 @@ export const messages = {
   Character: 'Роль',
   Crew: 'Команда',
   Dashboard: 'Обзор',
-  Filter: 'Фильтер',
+  Filter: 'Фильтр',
   Genre: 'Жанр',
   Genres: 'Жанры',
   Job: 'Должность',
