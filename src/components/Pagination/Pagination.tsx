@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Trans } from '@lingui/macro';
-import { Button } from './styled';
+import { PaginationWrapper, Button } from './styled';
 
 interface Props {
   pageIndex: number;
@@ -22,7 +22,7 @@ export const Pagination: React.FC<Props> = ({ pageIndex, total_pages, setPageInd
   }
 
   return (
-    <div>
+    <PaginationWrapper>
       {pageIndex > 1 && (
         <button onClick={() => setPageIndex(pageIndex - 1)}>
           <Trans>Prev</Trans>
@@ -42,6 +42,6 @@ export const Pagination: React.FC<Props> = ({ pageIndex, total_pages, setPageInd
           <Trans>Next</Trans>
         </button>
       )}
-    </div>
+    </PaginationWrapper>
   );
 };

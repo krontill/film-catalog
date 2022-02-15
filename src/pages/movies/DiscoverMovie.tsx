@@ -7,7 +7,7 @@ import { Filter } from '../../types/Filter';
 import { Pagination } from '../../components/Pagination/Pagination';
 import { useEffect } from 'react';
 
-export const DiscoverMovie: React.FC<{ filter: Filter | undefined }> = ({ filter }) => {
+export const DiscoverMovie: React.FC<{ filter: Filter | undefined }> = React.memo(({ filter }) => {
   if (filter === undefined) return null;
 
   const { genre, startDate, endDate } = filter;
@@ -36,4 +36,4 @@ export const DiscoverMovie: React.FC<{ filter: Filter | undefined }> = ({ filter
       <Pagination pageIndex={pageIndex} total_pages={total_pages} setPageIndex={setPageIndex} />
     </ListWrapper>
   );
-};
+});

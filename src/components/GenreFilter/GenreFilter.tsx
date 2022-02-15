@@ -21,5 +21,12 @@ export const GenreFilter: React.FC<Props> = ({ setSelectedGenre }) => {
 
   const onChange = (options: Options) => setSelectedGenre(options);
 
-  return <Select isMulti options={options} onChange={onChange} />;
+  return (
+    <>
+      <span>
+        <Trans>Genre</Trans>
+      </span>
+      <Select isMulti options={options} onChange={onChange} />
+    </>
+  );
 };

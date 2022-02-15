@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const PaginationWrapper = styled.div`
+  padding: 10px;
+`;
+
 interface Props {
   readonly isActive: boolean;
 }

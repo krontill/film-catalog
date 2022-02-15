@@ -4,7 +4,7 @@ import { fetcher } from '../helpers/fetcher';
 import { Filter } from '../types/Filter';
 import { getApiUrl } from '../helpers/getApiUrl';
 
-export const useDiscoverMovie = (filter: Filter, pageIndex: number) => {
+export const useDiscoverMovie = (filter: Filter, pageIndex?: number) => {
   const { genre, startDate, endDate } = filter;
   const params = {
     with_genres: genre,
