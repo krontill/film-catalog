@@ -1,13 +1,9 @@
 import useSWR from 'swr';
 import { fetcher } from '../helpers/fetcher';
-import config from '../config';
-
-const { API_URL, API_KEY } = config;
-
-const getApiUrl = () => `${API_URL}configuration?api_key=${API_KEY}`;
+import { getApiUrl } from '../helpers/getApiUrl';
 
 export const useImage = () => {
-  const url = getApiUrl();
+  const url = getApiUrl('configuration');
   const { data, error } = useSWR(url, fetcher);
   const baseUrl = data?.images?.base_url;
   const posterSizes = data?.images?.poster_sizes;

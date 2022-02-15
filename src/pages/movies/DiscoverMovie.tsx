@@ -3,11 +3,16 @@ import { Trans } from '@lingui/macro';
 import { useDiscoverMovie } from '../../hooks/useDiscoverMovie';
 import { PreviewList } from '../../components/PreviewList/PreviewList';
 import { ListWrapper } from '../details/styled';
+import { Filter } from '../../types/Filter';
 
-export const DiscoverMovie: React.FC<{ with_genres: string | undefined }> = ({ with_genres }) => {
-  if (with_genres === undefined || with_genres.length === 0) return null;
+export const DiscoverMovie: React.FC<{ filter: Filter | undefined }> = ({ filter }) => {
+  if (filter === undefined) return null;
 
-  const { data, isLoading, error } = useDiscoverMovie(with_genres);
+  const { genre, startDate, endDate } = filter;
+
+  if ((genre === undefined || genre === '') && startDate === null && endDate === null) return null;
+
+  const { data, isLoading, error } = useDiscoverMovie(filter);
 
   if (error !== undefined) return <Trans>loading error</Trans>;
 

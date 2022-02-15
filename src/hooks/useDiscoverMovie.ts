@@ -1,17 +1,17 @@
 import useSWR from 'swr';
-import { useLingui } from '@lingui/react';
-import config from '../config';
+import * as qs from 'qs';
 import { fetcher } from '../helpers/fetcher';
+import { Filter } from '../types/Filter';
+import { getApiUrl } from '../helpers/getApiUrl';
 
-const { API_URL, API_KEY } = config;
-
-const getApiUrl = (with_genres: string | undefined, activeLang: string) =>
-  `${API_URL}discover/movie?api_key=${API_KEY}&with_genres=${with_genres}&language=${activeLang}`; // check if not with_genres
-
-export const useDiscoverMovie = (with_genres: string | undefined) => {
-  const { i18n } = useLingui();
-  const activeLang = i18n.locale;
-  const url = getApiUrl(with_genres, activeLang);
+export const useDiscoverMovie = (filter: Filter) => {
+  const { genre, startDate, endDate } = filter;
+  const params = {
+    with_genres: genre,
+    'release_date.gte': startDate?.toISOString(),
+    'release_date.lte': endDate?.toISOString(),
+  };
+  const url = getApiUrl('discover/movie', qs.stringify(params));
   const { data, error } = useSWR(url, fetcher);
 
   return {

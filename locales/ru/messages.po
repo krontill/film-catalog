@@ -17,7 +17,7 @@ msgstr ""
 msgid "Active language"
 msgstr "Активный язык"
 
-#: src/pages/movies/MoviesPage.tsx:19
+#: src/pages/movies/MoviesPage.tsx:27
 msgid "Apply"
 msgstr "Применить"
 
@@ -46,6 +46,14 @@ msgstr "Команда"
 msgid "Dashboard"
 msgstr "Обзор"
 
+#: src/pages/movies/MoviesPage.tsx:19
+msgid "Filter"
+msgstr "Фильтер"
+
+#: src/pages/movies/MoviesPage.tsx:22
+msgid "Genre"
+msgstr "Жанр"
+
 #: src/pages/details/MovieInfo.tsx:18
 msgid "Genres"
 msgstr "Жанры"
@@ -71,7 +79,7 @@ msgstr "Детали фильма"
 msgid "Movie lists"
 msgstr "Список фильмов"
 
-#: src/pages/movies/MoviesPage.tsx:14
+#: src/pages/movies/MoviesPage.tsx:31
 #: src/routes.tsx:14
 msgid "Movies"
 msgstr "Фильмы"
@@ -113,6 +121,14 @@ msgstr "Случайный фильм"
 msgid "Recommendation"
 msgstr "Рекомендация"
 
+#: src/pages/movies/DateFilter.tsx:7
+msgid "Release date from"
+msgstr "Дата выхода с"
+
+#: src/pages/movies/DateFilter.tsx:11
+msgid "Release date to"
+msgstr "Дата выхода по"
+
 #: src/pages/details/MovieInfo.tsx:24
 msgid "Site"
 msgstr "Сайт"
@@ -129,7 +145,7 @@ msgstr "Предстоящие"
 #: src/pages/details/CastAndCrew.tsx:8
 #: src/pages/details/MovieInfo.tsx:8
 #: src/pages/details/Recommendation.tsx:9
-#: src/pages/movies/DiscoverMovie.tsx:11
+#: src/pages/movies/DiscoverMovie.tsx:14
 #: src/pages/movies/GenreFilter.tsx:8
 msgid "loading error"
 msgstr "ошибка загрузки"
@@ -138,7 +154,7 @@ msgstr "ошибка загрузки"
 #: src/pages/details/CastAndCrew.tsx:10
 #: src/pages/details/MovieInfo.tsx:10
 #: src/pages/details/Recommendation.tsx:11
-#: src/pages/movies/DiscoverMovie.tsx:13
+#: src/pages/movies/DiscoverMovie.tsx:16
 #: src/pages/movies/GenreFilter.tsx:10
 msgid "loading..."
 msgstr "загрузка..."
