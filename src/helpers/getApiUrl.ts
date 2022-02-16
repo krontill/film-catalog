@@ -7,5 +7,7 @@ export const getApiUrl = (url: string, queryString?: string) => {
   const { i18n } = useLingui();
   const activeLang = i18n.locale;
 
-  return `${API_URL}${url}?api_key=${API_KEY}&language=${activeLang}&${queryString}`;
+  const queryStringParameters = queryString === undefined ? '' : `&${queryString}`;
+
+  return `${API_URL}${url}?api_key=${API_KEY}&language=${activeLang}${queryStringParameters}`;
 };
