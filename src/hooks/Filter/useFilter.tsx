@@ -5,6 +5,7 @@ import { FilterWrapper } from './styled';
 import { Trans } from '@lingui/macro';
 import { GenreFilter } from '../../components/GenreFilter/GenreFilter';
 import { DateFilter } from '../../components/DateFilter/DateFilter';
+import * as qs from 'qs';
 
 export const UseFilter = () => {
   const [selectedGenre, setSelectedGenre] = React.useState<GenreOption[] | null>(null);
@@ -32,6 +33,6 @@ export const UseFilter = () => {
 
   return {
     filterComponent: React.useMemo(filterComponent, [selectedGenre, startDate, endDate]),
-    filterState: filter,
+    filterState: React.useMemo(() => filter, [qs.stringify(filter)]),
   };
 };

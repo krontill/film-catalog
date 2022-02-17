@@ -17,7 +17,7 @@ msgstr ""
 msgid "Active language"
 msgstr "Активный язык"
 
-#: src/pages/movies/MoviesPage.tsx:27
+#: src/hooks/Filter/useFilter.tsx:23
 msgid "Apply"
 msgstr "Применить"
 
@@ -46,11 +46,11 @@ msgstr "Команда"
 msgid "Dashboard"
 msgstr "Обзор"
 
-#: src/pages/movies/MoviesPage.tsx:19
+#: src/hooks/Filter/useFilter.tsx:18
 msgid "Filter"
 msgstr "Фильтр"
 
-#: src/pages/movies/MoviesPage.tsx:22
+#: src/components/GenreFilter/GenreFilter.tsx:16
 msgid "Genre"
 msgstr "Жанр"
 
@@ -66,7 +66,7 @@ msgstr "Должность"
 msgid "Lists"
 msgstr "Списки"
 
-#: src/components/Image/Image.tsx:7
+#: src/components/Image/Image.tsx:9
 msgid "Loading image"
 msgstr "Загрузка изображения"
 
@@ -79,7 +79,11 @@ msgstr "Детали фильма"
 msgid "Movie lists"
 msgstr "Список фильмов"
 
-#: src/pages/movies/MoviesPage.tsx:31
+#: src/pages/random/DiscoverRandomMovie.tsx:20
+msgid "Movie not found"
+msgstr "Фильм не найден"
+
+#: src/pages/movies/MoviesPage.tsx:10
 #: src/routes.tsx:14
 msgid "Movies"
 msgstr "Фильмы"
@@ -88,6 +92,10 @@ msgstr "Фильмы"
 #: src/pages/details/CastAndCrew.tsx:25
 msgid "Name"
 msgstr "Имя"
+
+#: src/components/Pagination/Pagination.tsx:22
+msgid "Next"
+msgstr "Следующая"
 
 #: src/pages/dashboard/Dashboard.tsx:12
 msgid "Now playing"
@@ -105,14 +113,15 @@ msgstr "Страница не найдена"
 msgid "Popular"
 msgstr "Популярные"
 
+#: src/components/Pagination/Pagination.tsx:16
+msgid "Prev"
+msgstr "Предыдущая"
+
 #: src/pages/details/MovieInfo.tsx:30
 msgid "Production companies"
 msgstr "Производство компаний"
 
-#: src/pages/random/Random.tsx:4
-msgid "Random"
-msgstr "Случайный"
-
+#: src/pages/random/Random.tsx:10
 #: src/routes.tsx:15
 msgid "Random movie"
 msgstr "Случайный фильм"
@@ -121,11 +130,11 @@ msgstr "Случайный фильм"
 msgid "Recommendation"
 msgstr "Рекомендация"
 
-#: src/pages/movies/DateFilter.tsx:7
+#: src/components/DateFilter/DateFilter.tsx:7
 msgid "Release date from"
 msgstr "Дата выхода с"
 
-#: src/pages/movies/DateFilter.tsx:11
+#: src/components/DateFilter/DateFilter.tsx:11
 msgid "Release date to"
 msgstr "Дата выхода по"
 
@@ -141,20 +150,22 @@ msgstr "Заголовок"
 msgid "Upcoming"
 msgstr "Предстоящие"
 
+#: src/components/GenreFilter/GenreFilter.tsx:8
 #: src/pages/dashboard/MovieList.tsx:10
 #: src/pages/details/CastAndCrew.tsx:8
 #: src/pages/details/MovieInfo.tsx:8
 #: src/pages/details/Recommendation.tsx:9
-#: src/pages/movies/DiscoverMovie.tsx:14
-#: src/pages/movies/GenreFilter.tsx:8
+#: src/pages/movies/DiscoverMovie.tsx:22
+#: src/pages/random/DiscoverRandomMovie.tsx:14
 msgid "loading error"
 msgstr "ошибка загрузки"
 
+#: src/components/GenreFilter/GenreFilter.tsx:10
 #: src/pages/dashboard/MovieList.tsx:12
 #: src/pages/details/CastAndCrew.tsx:10
 #: src/pages/details/MovieInfo.tsx:10
 #: src/pages/details/Recommendation.tsx:11
-#: src/pages/movies/DiscoverMovie.tsx:16
-#: src/pages/movies/GenreFilter.tsx:10
+#: src/pages/movies/DiscoverMovie.tsx:24
+#: src/pages/random/DiscoverRandomMovie.tsx:16
 msgid "loading..."
 msgstr "загрузка..."
