@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { StyledHeader, StyledLink } from './styled';
+import { StyledHeader, StyledLink, Wrapper } from './styled';
 import { nav } from '../../routes';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/macro';
+import { Login } from '../Login/Login';
 
 export const Header = () => {
   const { i18n } = useLingui();
@@ -18,13 +19,16 @@ export const Header = () => {
           </StyledLink>
         ))}
       </nav>
-      <div>
+      <Wrapper>
         <button onClick={() => switchLang('en')}>en</button>
         <button onClick={() => switchLang('ru')}>ru</button>
         <span>
           <Trans>Active language</Trans>:{activeLang}
         </span>
-      </div>
+      </Wrapper>
+      <Wrapper>
+        <Login />
+      </Wrapper>
     </StyledHeader>
   );
 };

@@ -13,13 +13,17 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/Header/Header.tsx:20
+#: src/components/Header/Header.tsx:21
 msgid "Active language"
 msgstr "Активный язык"
 
 #: src/hooks/Filter/useFilter.tsx:23
 msgid "Apply"
 msgstr "Применить"
+
+#: src/auth/RequireAuth.tsx:7
+msgid "Authorized only"
+msgstr "Только авторизованным"
 
 #: src/pages/details/MovieInfo.tsx:15
 msgid "Budget"
@@ -42,7 +46,7 @@ msgid "Crew"
 msgstr "Команда"
 
 #: src/pages/dashboard/Dashboard.tsx:7
-#: src/routes.tsx:13
+#: src/routes.tsx:14
 msgid "Dashboard"
 msgstr "Обзор"
 
@@ -70,12 +74,20 @@ msgstr "Списки"
 msgid "Loading image"
 msgstr "Загрузка изображения"
 
+#: src/components/Login/Login.tsx:48
+msgid "Login"
+msgstr "Вход"
+
+#: src/components/Login/Login.tsx:53
+msgid "Logout"
+msgstr "Выход"
+
 #: src/pages/details/DetailsPage.tsx:14
-#: src/routes.tsx:16
+#: src/routes.tsx:17
 msgid "Movie details"
 msgstr "Детали фильма"
 
-#: src/routes.tsx:17
+#: src/routes.tsx:18
 msgid "Movie lists"
 msgstr "Список фильмов"
 
@@ -84,7 +96,7 @@ msgid "Movie not found"
 msgstr "Фильм не найден"
 
 #: src/pages/movies/MoviesPage.tsx:10
-#: src/routes.tsx:14
+#: src/routes.tsx:15
 msgid "Movies"
 msgstr "Фильмы"
 
@@ -122,7 +134,7 @@ msgid "Production companies"
 msgstr "Производство компаний"
 
 #: src/pages/random/Random.tsx:10
-#: src/routes.tsx:15
+#: src/routes.tsx:16
 msgid "Random movie"
 msgstr "Случайный фильм"
 
@@ -149,6 +161,14 @@ msgstr "Заголовок"
 #: src/pages/dashboard/Dashboard.tsx:18
 msgid "Upcoming"
 msgstr "Предстоящие"
+
+#: src/components/Login/Login.tsx:45
+msgid "Username"
+msgstr "Пользователь"
+
+#: src/components/Login/Login.tsx:51
+msgid "Welcome"
+msgstr "Приветствую"
 
 #: src/components/GenreFilter/GenreFilter.tsx:8
 #: src/pages/dashboard/MovieList.tsx:10

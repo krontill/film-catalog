@@ -16,13 +16,16 @@ i18n.load({
 i18n.activate('en');
 
 import { App } from './App';
+import { AuthProvider } from './auth/AuthProvider';
 
 const mountNode = document.getElementById('app');
 ReactDOM.render(
   <BrowserRouter>
-    <I18nProvider i18n={i18n}>
-      <App />
-    </I18nProvider>
+    <AuthProvider>
+      <I18nProvider i18n={i18n}>
+        <App />
+      </I18nProvider>
+    </AuthProvider>
   </BrowserRouter>,
   mountNode
 );

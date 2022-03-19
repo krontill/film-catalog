@@ -2,6 +2,7 @@
 export const messages = {
   'Active language': 'Активный язык',
   Apply: 'Применить',
+  'Authorized only': 'Только авторизованным',
   Budget: 'Бюджет',
   Cast: 'Актеры',
   'Cast and crew for a movie.': 'Актеры и съемочная группа фильма.',
@@ -14,6 +15,8 @@ export const messages = {
   Job: 'Должность',
   Lists: 'Списки',
   'Loading image': 'Загрузка изображения',
+  Login: 'Вход',
+  Logout: 'Выход',
   'Movie details': 'Детали фильма',
   'Movie lists': 'Список фильмов',
   'Movie not found': 'Фильм не найден',
@@ -33,6 +36,8 @@ export const messages = {
   Site: 'Сайт',
   Title: 'Заголовок',
   Upcoming: 'Предстоящие',
+  Username: 'Пользователь',
+  Welcome: 'Приветствую',
   'loading error': 'ошибка загрузки',
   'loading...': 'загрузка...',
 };

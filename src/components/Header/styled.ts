@@ -12,3 +12,7 @@ export const StyledLink = styled(NavLink)`
     color: green;
   }
 `;
+
+export const Wrapper = styled.div`
+  padding: 10px;
+`;

@@ -2,6 +2,7 @@
 export const messages = {
   'Active language': 'Active language',
   Apply: 'Apply',
+  'Authorized only': 'Authorized only',
   Budget: 'Budget',
   Cast: 'Cast',
   'Cast and crew for a movie.': 'Cast and crew for a movie.',
@@ -14,6 +15,8 @@ export const messages = {
   Job: 'Job',
   Lists: 'Lists',
   'Loading image': 'Loading image',
+  Login: 'Login',
+  Logout: 'Logout',
   'Movie details': 'Movie details',
   'Movie lists': 'Movie lists',
   'Movie not found': 'Movie not found',
@@ -34,6 +37,8 @@ export const messages = {
   Site: 'Site',
   Title: 'Title',
   Upcoming: 'Upcoming',
+  Username: 'Username',
+  Welcome: 'Welcome',
   'loading error': 'loading error',
   'loading...': 'loading...',
 };

@@ -13,12 +13,16 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/Header/Header.tsx:20
+#: src/components/Header/Header.tsx:21
 msgid "Active language"
 msgstr ""
 
 #: src/hooks/Filter/useFilter.tsx:23
 msgid "Apply"
+msgstr ""
+
+#: src/auth/RequireAuth.tsx:7
+msgid "Authorized only"
 msgstr ""
 
 #: src/pages/details/MovieInfo.tsx:15
@@ -42,7 +46,7 @@ msgid "Crew"
 msgstr ""
 
 #: src/pages/dashboard/Dashboard.tsx:7
-#: src/routes.tsx:13
+#: src/routes.tsx:14
 msgid "Dashboard"
 msgstr ""
 
@@ -70,12 +74,20 @@ msgstr ""
 msgid "Loading image"
 msgstr ""
 
+#: src/components/Login/Login.tsx:48
+msgid "Login"
+msgstr ""
+
+#: src/components/Login/Login.tsx:53
+msgid "Logout"
+msgstr ""
+
 #: src/pages/details/DetailsPage.tsx:14
-#: src/routes.tsx:16
+#: src/routes.tsx:17
 msgid "Movie details"
 msgstr ""
 
-#: src/routes.tsx:17
+#: src/routes.tsx:18
 msgid "Movie lists"
 msgstr ""
 
@@ -84,7 +96,7 @@ msgid "Movie not found"
 msgstr ""
 
 #: src/pages/movies/MoviesPage.tsx:10
-#: src/routes.tsx:14
+#: src/routes.tsx:15
 msgid "Movies"
 msgstr ""
 
@@ -126,7 +138,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/random/Random.tsx:10
-#: src/routes.tsx:15
+#: src/routes.tsx:16
 msgid "Random movie"
 msgstr ""
 
@@ -152,6 +164,14 @@ msgstr ""
 
 #: src/pages/dashboard/Dashboard.tsx:18
 msgid "Upcoming"
+msgstr ""
+
+#: src/components/Login/Login.tsx:45
+msgid "Username"
+msgstr ""
+
+#: src/components/Login/Login.tsx:51
+msgid "Welcome"
 msgstr ""
 
 #: src/components/GenreFilter/GenreFilter.tsx:8

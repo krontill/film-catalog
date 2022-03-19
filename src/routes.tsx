@@ -5,12 +5,13 @@ import { Random } from './pages/random/Random';
 import { DetailsPage } from './pages/details/DetailsPage';
 import { Lists } from './pages/lists/Lists';
 import { Trans } from '@lingui/macro';
+import { RequireAuth } from './auth/RequireAuth';
 
-const DASHBOARD_PATH = '/';
+export const DASHBOARD_PATH = '/';
 const MOVIES_PATH = '/movies';
 const RANDOM_PATH = '/random';
 const DETAILS_PATH = '/details-movie-:id';
-const LISTS_PATH = '/lists';
+export const LISTS_PATH = '/lists';
 
 const DASHBOARD_TITLE = <Trans>Dashboard</Trans>;
 const MOVIES_TITLE = <Trans>Movies</Trans>;
@@ -61,6 +62,10 @@ export const routes = [
   {
     path: LISTS_PATH,
     title: LISTS_TITLE,
-    component: <Lists />,
+    component: (
+      <RequireAuth>
+        <Lists />
+      </RequireAuth>
+    ),
   },
 ];
