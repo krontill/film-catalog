@@ -41,6 +41,10 @@ msgstr "Актеры и съемочная группа фильма."
 msgid "Character"
 msgstr "Роль"
 
+#: src/pages/lists/Lists.tsx:20
+msgid "Create a list"
+msgstr "Создать список"
+
 #: src/pages/details/CastAndCrew.tsx:22
 msgid "Crew"
 msgstr "Команда"
@@ -66,7 +70,7 @@ msgstr "Жанры"
 msgid "Job"
 msgstr "Должность"
 
-#: src/pages/lists/Lists.tsx:4
+#: src/pages/lists/Lists.tsx:18
 msgid "Lists"
 msgstr "Списки"
 
@@ -113,7 +117,7 @@ msgstr "Следующая"
 msgid "Now playing"
 msgstr "Сейчас в прокате"
 
-#: src/components/Preview/Preview.tsx:15
+#: src/components/Preview/Preview.tsx:18
 msgid "Overview"
 msgstr "Описание"
 
@@ -154,7 +158,7 @@ msgstr "Дата выхода по"
 msgid "Site"
 msgstr "Сайт"
 
-#: src/components/Preview/Preview.tsx:10
+#: src/components/Preview/Preview.tsx:11
 msgid "Title"
 msgstr "Заголовок"
 

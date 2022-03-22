@@ -7,6 +7,7 @@ export const messages = {
   Cast: 'Актеры',
   'Cast and crew for a movie.': 'Актеры и съемочная группа фильма.',
   Character: 'Роль',
+  'Create a list': 'Создать список',
   Crew: 'Команда',
   Dashboard: 'Обзор',
   Filter: 'Фильтр',

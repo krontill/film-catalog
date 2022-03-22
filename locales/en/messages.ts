@@ -7,6 +7,7 @@ export const messages = {
   Cast: 'Cast',
   'Cast and crew for a movie.': 'Cast and crew for a movie.',
   Character: 'Character',
+  'Create a list': 'Create a list',
   Crew: 'Crew',
   Dashboard: 'Dashboard',
   Filter: 'Filter',
