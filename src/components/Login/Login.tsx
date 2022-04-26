@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../auth/useAuth';
-import { DASHBOARD_PATH, LISTS_PATH } from '../../routes';
+import { Path } from '../../routes';
 
 const guestUrl = '/authentication/guest_session/new';
 
@@ -31,7 +31,7 @@ export const Login = () => {
     const id = data?.guest_session_id;
     if (id !== undefined) {
       setSessionId(id);
-      auth?.signin({ username, id }, () => navigate(LISTS_PATH));
+      auth?.signin({ username, id }, () => navigate(Path.lists));
     }
   }, [data]);
 
@@ -44,7 +44,7 @@ export const Login = () => {
   };
 
   const handleLogout = () => {
-    auth?.signout(() => navigate(DASHBOARD_PATH));
+    auth?.signout(() => navigate(Path.dashboard));
   };
 
   return (
