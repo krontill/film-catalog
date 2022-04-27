@@ -16,7 +16,7 @@ export const AddToFavorites: React.FC<AddToFavorites> = ({ id }) => {
   const [favoriteListId] = userLists || [];
   const [isLoaded, setIsLoaded] = useState<true | false>(true);
 
-  if (userId === undefined) return null;
+  if (!userId) return null;
 
   const params = { session_id: id };
   const bodyParams = { media_id: id };

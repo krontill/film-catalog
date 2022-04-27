@@ -6,7 +6,7 @@ import { useLingui } from '@lingui/react';
 export const useList = (name: string, description: string, id: string | undefined) => {
   const { i18n } = useLingui();
   const activeLang = i18n.locale;
-  if (id === undefined) return null;
+  if (!id) return null;
 
   const params = { session_id: id };
   const bodyParams = {

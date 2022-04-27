@@ -11,7 +11,8 @@
       2,
       {
         "allowString": false,
-        "allowNumber": false
+        "allowNumber": false,
+        "allowNullableString": true
       }
     ],
     "prettier/prettier": "error"

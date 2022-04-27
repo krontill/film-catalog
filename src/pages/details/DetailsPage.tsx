@@ -9,7 +9,7 @@ import { NotFound } from '../404/NotFound';
 export const DetailsPage = () => {
   const { id } = useParams();
 
-  if (id === undefined) return <NotFound />;
+  if (!id) return <NotFound />;
 
   return (
     <div>

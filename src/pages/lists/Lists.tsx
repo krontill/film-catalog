@@ -13,7 +13,7 @@ export const Lists = () => {
   console.log('Lists response', response);
 
   const handleCreateList = () => {
-    if (id === undefined) return null;
+    if (!id) return null;
   };
 
   return (

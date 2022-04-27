@@ -8,7 +8,7 @@ import { Pagination } from '../../components/Pagination/Pagination';
 import { useEffect } from 'react';
 
 export const DiscoverMovie: React.FC<{ filter: Filter | undefined }> = React.memo(({ filter }) => {
-  if (filter === undefined) return null;
+  if (!filter) return null;
 
   const { genre, startDate, endDate } = filter;
 

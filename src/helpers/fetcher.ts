@@ -10,7 +10,7 @@ export const fetcher = (url: string) =>
   });
 
 export const complexFetcher = (url: string | null, body: string, method: string) => {
-  if (url === null) return null;
+  if (!url) return null;
 
   return fetch(url, {
     method,

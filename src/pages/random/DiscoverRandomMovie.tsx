@@ -6,7 +6,7 @@ import { getRandomInt } from '../../helpers/getRandomInt';
 import { useDiscoverRandomMovie } from '../../hooks/useDiscoverRandomMovie';
 
 export const DiscoverRandomMovie: React.FC<{ filter: Filter | undefined }> = React.memo(({ filter }) => {
-  if (filter === undefined) return null;
+  if (!filter) return null;
 
   const { genre, startDate, endDate } = filter;
 
