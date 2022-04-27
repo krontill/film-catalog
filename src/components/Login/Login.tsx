@@ -39,8 +39,8 @@ export const Login = () => {
     event.preventDefault();
     setIsLoaded(true);
     const formData = new FormData(event.currentTarget);
-    const username = formData.get('username') as string;
-    setUsername(username);
+    const usernameField = formData.get('username') as string;
+    setUsername(usernameField);
   };
 
   const handleLogout = () => {
